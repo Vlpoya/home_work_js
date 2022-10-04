@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework</title>
+</head>
+<body>
+<!--
+Необязательное задание.
+
+Необходимо реализовать функцию-конструктор Rectangle.
+-->
+<script>
+  "use strict";
+
+  /**
+   * Returns the rectangle object with width and height parameters and
+   * getArea() method.
+   *
+   * @param {number} width - Rectangle width
+   * @param {number} height - Rectangle height
+   * @return {Rectangle}
+   */
+   class Rectangle {
+  constructor(width, heigth) {
+    this.width = width;
+    this.heigth = heigth;
+  }
+  rectArea() {
+    return this.width * this.heigth;
+  }
+  }
+  const rec1 = new Rectangle(50, 2)
+  console.log(rec1.width);
+  console.log(rec1.heigth);
+  console.log(rec1.rectArea());
+
+  /*
+  Данная задача решалась в данном выпуске: https://youtu.be/260X2HfaCWc
+  Советую смотреть подобные выпуски, когда будет свободное время.
+   */
+</script>
+</body>
+</html>
